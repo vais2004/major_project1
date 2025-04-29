@@ -1,11 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function App(){
 
     const categories=['Men','Women','Kids',]
     return(
         <>
+        <Header/>
         <main className="container py-3">
             <article>
                 <div className="row">
@@ -20,6 +23,7 @@ export default function App(){
                 </div>
             </article>
         </main>
+        <Footer/>
         </>
     )
 }
